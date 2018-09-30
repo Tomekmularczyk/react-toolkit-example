@@ -1,0 +1,17 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "react-toolkit dev",
+    "build": "react-toolkit build"
+  },
+  "author": "Tomasz Mularczyk",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-toolkit": "file:../react-toolkit",
+    "styled-components": "^3.4.9"
+  }
+}
