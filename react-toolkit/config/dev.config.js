@@ -8,10 +8,10 @@ const devConfig = merge([
     client: ["@babel/polyfill", PATHS.clientBundleEntry]
   }),
   parts.setOutput(PATHS.outputDirectory),
-  parts.setDevServer(),
+  parts.startDevServer(),
   parts.resolveExtensions([".js", ".jsx"]),
   parts.transpileJavaScript(),
-  parts.handleStaticAssets("static/"),
+  parts.handleStaticAssetsImport("static/"),
   parts.useHTMLTemplate(PATHS.htmlTemplate),
   parts.setHotModuleReplacement()
 ]);

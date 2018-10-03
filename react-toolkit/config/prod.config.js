@@ -11,7 +11,7 @@ const productionConfig = merge([
   parts.cleanDirectory(PATHS.outputDirectory, PATHS.appRoot),
   parts.createVendorChunk(["@babel/polyfill|react|react-dom"]),
   parts.resolveExtensions([".js", ".jsx"]),
-  parts.handleStaticAssets("static/"),
+  parts.handleStaticAssetsImport("static/"),
   parts.useHTMLTemplate(PATHS.htmlTemplate),
   parts.transpileJavaScript()
 ]);

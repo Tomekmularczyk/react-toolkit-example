@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 
-exports.setDevServer = () => ({
+exports.startDevServer = () => ({
   devServer: {
     compress: true,
     hot: true,
@@ -49,7 +49,7 @@ exports.transpileJavaScript = () => ({
   }
 });
 
-exports.handleStaticAssets = relativePath => ({
+exports.handleStaticAssetsImport = relativePath => ({
   module: {
     rules: [
       {
